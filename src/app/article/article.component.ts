@@ -1,9 +1,9 @@
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
-import { Article } from './article.model'; //Non cancellare gli altri import
+import { Article } from './article.model'; 
 
 
 @Component({
-  selector: 'app-article', //Il tag per inserire il componente sarà <app-article>
+  selector: 'app-article', 
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css']
 })
@@ -17,12 +17,12 @@ export class ArticleComponent implements OnInit {
   }
 
   voteUp(): Boolean {
-    this.article.voteUp(); //Modificato qui 
+    this.article.voteUp(); 
     return false;
   }
 
   voteDown():Boolean {
-    this.article.voteDown(); //Modificato qui
+    this.article.voteDown(); 
     return false;
   }
 
